@@ -1,0 +1,22 @@
+{
+  "name": "ndlr",
+  "version": "1.0.0",
+  "description": "La soirée d'automn de l'Est parisien à ne pas manquer !",
+  "private": true,
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "latest",
+    "gulp-filter": "latest",
+    "gulp-html-replace": "latest",
+    "gulp-jshint": "latest",
+    "gulp-less": "^3.3.2",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.8",
+    "gulp-util": "latest",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "latest",
+    "less": "latest"
+  }
+}
