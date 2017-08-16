@@ -1,3 +1,4 @@
-node_modules/
-www/*.min.css
-www/*.min.js
+node_modules
+
+www/ndlr.min.css
+www/ndlr.min.js
