@@ -49,7 +49,8 @@ gulp.task('build-js', function() {
  */
 gulp.task('build-css', function() {
     var appFiles = [
-        'css/*.less'
+        'css/*.less',
+        'css/*.css'
     ];
     return gulp.src(appFiles)
         .pipe(filter(['**/*.css', '**/*.less']))
