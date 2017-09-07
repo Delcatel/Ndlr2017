@@ -7,7 +7,6 @@
     "gulp": "latest",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "latest",
-    "gulp-filter": "latest",
     "gulp-html-replace": "latest",
     "gulp-jshint": "latest",
     "gulp-less": "^3.3.2",

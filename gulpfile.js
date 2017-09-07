@@ -1,6 +1,5 @@
 var autoprefixer   = require('gulp-autoprefixer');
 var concat         = require('gulp-concat');
-var filter         = require('gulp-filter');
 var gulp           = require('gulp');
 var gutil          = require('gulp-util');
 var jshint         = require('gulp-jshint');
@@ -27,11 +26,10 @@ gulp.task('lint-js', function() {
  */
 gulp.task('build-js', function() {
     var appFiles = [
-        'js/*.js'
+        'js/**/*.js'
     ];
 
     var ndlr = gulp.src(appFiles)
-        .pipe(filter(['**/*.js']))
         .pipe(sourcemaps.init())
         .pipe(concat('ndlr.js'))
     ;
@@ -49,13 +47,12 @@ gulp.task('build-js', function() {
  */
 gulp.task('build-css', function() {
     var appFiles = [
-        'css/*.less',
-        'css/*.css'
+        'css/**/*.less',
+        'css/**/*.css'
     ];
     return gulp.src(appFiles)
-        .pipe(filter(['**/*.css', '**/*.less']))
-        .pipe(less())
         .pipe(concat('ndlr.min.css'))
+        .pipe(less())
         .pipe(autoprefixer({
             cascade: false
         }))
@@ -69,7 +66,7 @@ gulp.task('build-css', function() {
  */
 gulp.task('watch', function() {
     gulp.watch(['js/*.js'], ['lint-js', 'build-js']);
-    gulp.watch(['css/*.less', 'css/*.css'], ['build-css']);
+    gulp.watch(['css/**/*.less', 'css/**/*.css'], ['build-css']);
 });
 
 /**
