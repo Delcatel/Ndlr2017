@@ -50,7 +50,7 @@ gulp.task('build-css', function() {
         'css/**/*.less',
         'css/**/*.css'
     ];
-    return gulp.src(appFiles)
+    return gulp.src('css/ndlr.less')
         .pipe(concat('ndlr.min.css'))
         .pipe(less())
         .pipe(autoprefixer({
