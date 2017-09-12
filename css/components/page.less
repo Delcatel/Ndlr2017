@@ -1,9 +1,10 @@
 .Page {
   &__Background {
     position: relative;
+    max-width: 600px;
     width: calc("100%-40px");
     padding : 5px 15px 20px;
-    margin: 20px;
+    margin: 0 auto;
     color: #FFFFFF;
     .redbg;
     .shadowed;
@@ -12,6 +13,11 @@
   &__Title {
     margin : 20px auto;
     .text-center;
+  }
+
+  &--padding {
+    padding: 20px;
+    width: 100%;
   }
 }
 
