@@ -1,10 +1,26 @@
 .Info__Wrapper {
-  padding: 30px 40px;
+  @media(min-width: @sizeMd) {
+    padding: 30px 40px;
+  }
+  @media(max-width: @sizeMd) {
+    padding: 30px 0;
+  }
   color: #605E5E;
+  margin: auto;
+
+  @media(min-width: @sizeMd) {
+    width: 980px;
+  }
+  @media(max-width: @sizeMd) {
+    max-width: 490px;
+  }
 }
 
 .Info__Pannel {
-  padding: 25px;
+  padding: 15px;
+  @media(max-width: @sizeMd) {
+    .text-center;
+  }
 }
 
 .Info__Top {
@@ -12,14 +28,24 @@
   font: normal normal normal 15px 'Lato', sans-serif;
 }
 .Info__Middle {
-  font-size: 50px;
+  @media(max-width: @sizeMd) {
+    font-size: 35px;
+  }
+  @media(min-width: @sizeMd) {
+    font-size: 50px;
+    height: 250px;
+  }
   font-family: 'Roboto Condensed', sans-serif;
-  height: 250px;
 }
 
 .Info__Bottom {
-  height: 100px;
-  font-size: 55px;
+  @media(max-width: @sizeMd) {
+    font-size: 20px;
+  }
+  @media(min-width: @sizeMd) {
+    font-size: 30px;
+    height: 100px;
+  }
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -29,8 +55,14 @@
 }
 
 .Info__Desription {
-  font: normal normal normal 30px 'Roboto Condensed', sans-serif;
-  padding: 0 50px;
+  @media(max-width: @sizeXs) {
+    padding: 15px;
+    font: normal normal normal 20px 'Roboto Condensed', sans-serif;
+  }
+  @media(min-width: @sizeXs) {
+    padding: 0 50px 20px;
+    font: normal normal normal 30px 'Roboto Condensed', sans-serif;
+  }
 }
 
 .Info__Element {
@@ -38,7 +70,7 @@
 }
 
 .Info__Horaire {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0;
   font-family: sans-serif;
 }
