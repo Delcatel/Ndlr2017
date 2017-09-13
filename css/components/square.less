@@ -1,45 +1,44 @@
 .Square {
   .redbg;
   .text-center;
-  width: 415px;
+  @media(max-width: @sizeMd) {
+    margin: 30px 0 15px;
+  }
+  @media(min-width: @sizeMd) {
+    width: @sizeXs;
+    position: absolute;
+    top: 100px;
+    left: 282px;
+  }
   height: 500px;
-  left: 282px;
-  position: absolute;
-  top: 100px;
   color: #FFFFFF;
   .shadowed;
 
   &__Image {
-    position: absolute;
-    top: 10px;
-    left: 183px;
+    margin: 10px auto;
     height: 50px;
   }
   &__header {
-    position: absolute;
-    width: 280px;
-    left: 69px;
-    top: 70px;
-    margin: 0px;
-
+    margin: 0 auto;
     font: normal normal normal 20px 'Lato', sans-serif;
     letter-spacing: 0.1em;
   }
 
   &__middle {
-    position: absolute;
-    left: 20px;
-    top: 140px;
-    width: 382px;
-
-    font: normal normal 60px/1.2em 'Teko', sans-serif;
+    margin: 25px auto;
+    @media(max-width: @sizeXs) {
+      font: normal normal 50px/1.2em 'Teko', sans-serif;
+      margin: 40px auto;
+    }
+    @media(min-width: @sizeXs) {
+      font: normal normal 60px/1.2em 'Teko', sans-serif;
+      margin: 25px auto;
+    }
     letter-spacing: 0.5em;
   }
 
   &__separator {
-    position: absolute;
-    top: 380px;
-    left: 153px;
+    margin: 30px auto;
     width: 92px;
     height: 2px;
     border-style: none;
@@ -47,11 +46,7 @@
   }
 
   &__footer {
-    position: absolute;
-    width: 350px;
-    left: 32px;
-    top: 430px;
-
+    margin: 40px auto;
     font: normal normal normal 15px 'Lato', sans-serif;
     letter-spacing: 0.2em;
   }
@@ -59,10 +54,23 @@
 
 .Container {
   position: relative;
-  width: 980px;
   margin: auto;
+
+  @media(max-width: @sizeMd) {
+    max-width: @sizeXs;
+    padding: 0 15px;
+  }
+  @media(min-width: @sizeMd) {
+    width: 980px;
+  }
+
   &__Menu {
     width: 100%;
-    height: 680px;
+    @media(max-width: @sizeMd) {
+      height: 815px;
+    }
+    @media(min-width: @sizeMd) {
+      height: 680px;
+    }
   }
 }

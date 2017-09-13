@@ -1,5 +1,4 @@
 .Button {
-  position: absolute;
   cursor: pointer;
   .shadowed;
   .redbg;
@@ -12,32 +11,46 @@
 .Button {
   &--menu {
     .Button;
-    width: 248px;
+    @media(max-width: @sizeMd) {
+      margin: 15px 0 15px;
+    }
+    @media(min-width: @sizeMd) {
+      width: 248px;
+      position: absolute;
+    }
     height: 56px;
   }
 
   &--1 {
     .Button;
-    left: 13px;
-    top: 258px;
+    @media(min-width: @sizeMd) {
+      left: 13px;
+      top: 258px;
+    }
   }
 
   &--2 {
     .Button;
-    left: 13px;
-    top: 401px;
+    @media(min-width: @sizeMd) {
+      left: 13px;
+      top: 401px;
+    }
   }
 
   &--3 {
     .Button;
-    left: 715px;
-    top: 258px;
+    @media(min-width: @sizeMd) {
+      left: 715px;
+      top: 258px;
+    }
   }
 
   &--4 {
     .Button;
-    left: 715px;
-    top: 401px;
+    @media(min-width: @sizeMd) {
+      left: 715px;
+      top: 401px;
+    }
   }
 
   &--achat {
