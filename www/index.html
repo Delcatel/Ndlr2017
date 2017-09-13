@@ -50,6 +50,13 @@
       </div>
     </div>
     <div class="Achat">
+      <div>
+        <div id="simple_timer"></div>
+  			<div id="countdowned_timer"></div>
+  			<div id="countdowned_timer_event"></div>
+  			<div id="periodic_timer_minutes"></div>
+  			<div id="periodic_timer_days"></div>
+      </div>
       <div class="Button--achat">
         <section>RESERVE TA PLACE ICI</section>
       </div>
@@ -137,5 +144,20 @@
       <img src="img/partenaires/sono_supelec1.png" />
       <img src="img/partenaires/soonnight.jpg" />
     </div>
+
+    <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/countdown.js"></script>
+    <script>
+      $(document).ready(function(){
+        /* Simple Timer. The countdown to 22:30 2017.10.06 */
+        $('#simple_timer').syotimer({
+            year: 2017,
+            month: 10,
+            day: 6,
+            hour: 22,
+            minute: 30,
+        });
+      });
+    </script>
   </body>
 </html>

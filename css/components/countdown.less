@@ -1,0 +1,71 @@
+/*----------Countdown----------*/
+.timer{
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 30px auto 0;
+	padding: 0 0 10px;
+}
+.timer .table-cell{
+	display: inline-block;
+	margin: 0 5px;
+	width: 79px;
+}
+.timer .table-cell .tab-val{
+	font-size: 35px;
+
+	height: 81px;
+	line-height: 81px;
+
+	margin: 0 0 5px;
+}
+.timer .table-cell .tab-metr{
+	font-family: Arial;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#simple_timer.timer .table-cell.day,
+#periodic_timer_days.timer .table-cell.hour{
+	width: 120px;
+}
+#countdown{
+	width:100%;
+	color:#FFF;
+	font-size:50px;
+	text-align:center;
+	padding:0% 0% 2% 0%;
+}
+#countdown h5{
+	font-size:0.3em;
+	text-align:center;
+}
+
+
+/*MEDIA QUERIES---*/
+@media only screen and (min-width:600px) and (max-width:920px) {
+  #countdown{
+  	font-size:35px;
+  	padding:0% 0% 2% 0%;
+  }
+  #countdown h5{
+  	font-size:0.3em;
+  }
+}
+@media only screen and (max-width:599px) {
+  #countdown{
+  	font-size:20px;
+  	padding:0% 0% 2% 0%;
+  }
+  #countdown h5{
+  	font-size:0.4em;
+  }
+}
+@media only screen and (min-width:2000px){
+  #countdown{
+  	font-size:60px;
+  	padding:0% 0% 2% 0%;
+  }
+  #countdown h5{
+  	font-size:0.3em;
+  }
+}
