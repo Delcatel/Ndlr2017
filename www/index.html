@@ -37,6 +37,21 @@
     -->
   </head>
   <body>
+    <!--Backgorund Slideshow-->
+    <ul class="slideshow">
+      <li><span>a</span></li>
+      <li><span>a</span></li>
+      <li><span>a</span></li>
+      <li><span>a</span></li>
+      <li><span>a</span></li>
+      <li><span>a</span></li>
+    </ul>
+
+    <!-- Pre Loader-->
+    <div id="loading">
+      <img id="loading-image" src="img/preloader.gif" alt="Loading..." />
+    </div>
+
     <div class="Container">
       <div class="Container__Menu">
         <div class="Square">
@@ -175,6 +190,9 @@
     <script type="text/javascript" src="js/jquery-latest.min.js"></script>
     <script type="text/javascript" src="js/countdown.js"></script>
     <script>
+      $(window).load(function() {
+        $('#loading').hide();
+      });
       $(document).ready(function(){
         /* Simple Timer. The countdown to 22:30 2017.10.06 */
         $('#simple_timer').syotimer({
