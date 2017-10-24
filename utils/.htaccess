@@ -1,1 +1,1 @@
-Redirect temp / /maintenance/
+Redirect temp /index.html http://ndlr2017.enpc.org/maintenance
